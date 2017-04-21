@@ -1,6 +1,6 @@
 //javascript:
 (function () {
-  /* Poprzedni miesiąc */
+  /* Poprzedni miesiąc http://stackoverflow.com/a/605582/588759 */
   function previousMonthAndYear() {
     var dateObj = new Date();
     dateObj.setMonth(dateObj.getMonth() - 1);
