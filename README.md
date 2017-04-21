@@ -1,1 +1,1 @@
-# idea-bank-javascript
+# idea-bank-bookmarklets
