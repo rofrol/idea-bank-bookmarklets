@@ -15,7 +15,7 @@
     document.querySelector('[name="declaration_date"]').value = zusDeclarationDate();
     document.querySelector('tr:nth-child(12) [name="amount"]').value = amount;
   }
-  function spoleczne{ set('#rb_msa_1', '749.94'); };
-  function zdrowotne{ set('#rb_msa_2', '297.28'); };
-  function fundusz{ set('#rb_msa_3', '62.67'); };
+  function spoleczne(){ set('#rb_msa_1', '749.94'); };
+  function zdrowotne(){ set('#rb_msa_2', '297.28'); };
+  function fundusz(){ set('#rb_msa_3', '62.67'); };
 })();
