@@ -10,6 +10,8 @@
   };
 
   function set(payment) {
+    /* Przelew do ZUS */
+    document.querySelector('[onclick="showform(\'transferZus\')"]').click();
     document.querySelector(payment.id).click();
     document.querySelector('#payment_typ_msa_5').click();
     document.querySelector('[name="declaration_number"]').value = '01';
