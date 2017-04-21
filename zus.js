@@ -9,8 +9,8 @@
     return { month, year };
   };
 
-  function set(id, amount) {
-    document.querySelector(id).click();
+  function set(payment) {
+    document.querySelector(payment.id).click();
     document.querySelector('#payment_typ_msa_5').click();
     document.querySelector('[name="declaration_number"]').value = '01';
 
@@ -21,9 +21,12 @@
     };
 
     document.querySelector('[name="declaration_date"]').value = zusDeclarationDate();
-    document.querySelector('tr:nth-child(12) [name="amount"]').value = amount;
+    document.querySelector('tr:nth-child(12) [name="amount"]').value = payment.amount;
   }
-  function spoleczne() { set('#rb_msa_1', '749.94'); };
-  function zdrowotne() { set('#rb_msa_2', '297.28'); };
-  function fundusz() { set('#rb_msa_3', '62.67'); };
+  var payment = {
+    spoleczne: { id: '#rb_msa_1', amount: '749.94' },
+    zdrowotne: { id: '#rb_msa_2', amount: '297.28' },
+    fundusz: { id: '#rb_msa_3', amount: '62.67' }
+  };
+  /* set(payment.spoleczne); */
 })();
