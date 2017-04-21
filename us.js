@@ -15,7 +15,7 @@
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
-  async function run(formularz_type) {
+  async function run(formularz) {
     /* Przelew do US */
     document.querySelector('[onclick="showform(\'transferUs\')"]').click();
     await sleep(1000);
@@ -28,14 +28,14 @@
     /* Urząd skarbowy */
     document.querySelector('#us_2_msa_1').click();
     await sleep(1000);
-    /* formularz_type */
-    document.querySelector(formularz_type.id).click();
+    /* formularz */
+    document.querySelector(formularz.id).click();
     await sleep(1000);
     /* select bank account */
     document.querySelector('#us_4_msa_1').click();
     await sleep(1000);
     /* Zapisz */
-    document.getElementById(formularz_type.bank).click();
+    document.getElementById(formularz.bank).click();
     await sleep(1000);
     /* M - Miesiąc */
     document.querySelector('#interval_msa_4').click();
